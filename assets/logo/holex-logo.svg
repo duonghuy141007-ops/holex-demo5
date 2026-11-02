@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E7C4" />
+      <stop offset="35%" stop-color="#D4AF62" />
+      <stop offset="70%" stop-color="#AA8232" />
+      <stop offset="100%" stop-color="#E5C77A" />
+    </linearGradient>
+    <linearGradient id="sapphireGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4B85" />
+      <stop offset="50%" stop-color="#173B69" />
+      <stop offset="100%" stop-color="#0B1D38" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Brand Emblem (Holex Diamond Chrono H) -->
+  <g transform="translate(10, 5)">
+    <!-- Outer Octagonal Watch Bezel Ring -->
+    <circle cx="30" cy="30" r="28" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" stroke-dasharray="3, 3" opacity="0.8" />
+    <circle cx="30" cy="30" r="25" fill="url(#sapphireGradient)" stroke="url(#goldGradient)" stroke-width="1.2" />
+
+    <!-- Diamond Facets Background -->
+    <polygon points="30,8 48,25 30,48 12,25" fill="none" stroke="url(#goldGradient)" stroke-width="0.8" opacity="0.5" />
+    <polygon points="30,12 43,26 30,44 17,26" fill="none" stroke="#D4AF62" stroke-width="0.5" opacity="0.3" />
+
+    <!-- Stylized Monogram "H" with Chronograph hands / Precision lines -->
+    <!-- Left Pillar -->
+    <path d="M 22 17 L 25 17 L 25 43 L 22 43 Z" fill="url(#goldGradient)" filter="url(#goldGlow)" />
+    <!-- Right Pillar -->
+    <path d="M 35 17 L 38 17 L 38 43 L 35 43 Z" fill="url(#goldGradient)" filter="url(#goldGlow)" />
+    <!-- Center Bridge with Diamond Core -->
+    <path d="M 24 28.5 L 36 28.5 L 36 31.5 L 24 31.5 Z" fill="url(#goldGradient)" />
+    <!-- Diamond Crown at Center -->
+    <polygon points="30,26 34,30 30,34 26,30" fill="#F7F5F0" stroke="url(#goldGradient)" stroke-width="0.8" />
+
+    <!-- Watch Hand Ticks at 12, 3, 6, 9 -->
+    <line x1="30" y1="6" x2="30" y2="10" stroke="url(#goldGradient)" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="52" y1="30" x2="48" y2="30" stroke="url(#goldGradient)" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="30" y1="54" x2="30" y2="50" stroke="url(#goldGradient)" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="8" y1="30" x2="12" y2="30" stroke="url(#goldGradient)" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography: HOLEX WATCH STORE -->
+  <text x="78" y="38" font-family="'Playfair Display', 'Cormorant Garamond', serif" font-size="28" font-weight="700" letter-spacing="4" fill="url(#goldGradient)">
+    HOLEX
+  </text>
+  <text x="80" y="52" font-family="'Roboto', 'Montserrat', sans-serif" font-size="8.5" font-weight="500" letter-spacing="3.5" fill="#C5C5C5">
+    WATCH STORE • ĐỒNG NAI
+  </text>
+</svg>

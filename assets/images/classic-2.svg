@@ -1,0 +1,118 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="dialGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#15181D" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#15181D" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3D4"/>
+      <stop offset="25%" stop-color="#E0E0E0"/>
+      <stop offset="50%" stop-color="#8E6C20"/>
+      <stop offset="75%" stop-color="#E0E0E0"/>
+      <stop offset="100%" stop-color="#FFF3D4"/>
+    </linearGradient>
+    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#150D0A"/>
+      <stop offset="40%" stop-color="#191B1F"/>
+      <stop offset="70%" stop-color="#191B1F"/>
+      <stop offset="100%" stop-color="#150D0A"/>
+    </linearGradient>
+    <linearGradient id="crystalShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="65%" stop-color="#173B69" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" fill="#0C0E12" rx="16"/>
+  <!-- Ambient backdrop glow -->
+  <circle cx="250" cy="250" r="180" fill="#173B69" opacity="0.15"/>
+  <circle cx="250" cy="250" r="110" fill="#D4AF62" opacity="0.08"/>
+
+  <g filter="url(#dropShadow)">
+    <!-- Top Strap -->
+    <path d="M 195 20 L 305 20 L 310 135 L 190 135 Z" fill="url(#strapGrad)" stroke="#1a1a1a" stroke-width="1"/>
+    <!-- Top Strap Stitches -->
+    <line x1="202" y1="20" x2="198" y2="130" stroke="#AA8232" stroke-dasharray="4,4" stroke-width="1.2" opacity="0.7"/>
+    <line x1="298" y1="20" x2="302" y2="130" stroke="#AA8232" stroke-dasharray="4,4" stroke-width="1.2" opacity="0.7"/>
+
+    <!-- Bottom Strap -->
+    <path d="M 190 365 L 310 365 L 305 480 L 195 480 Z" fill="url(#strapGrad)" stroke="#1a1a1a" stroke-width="1"/>
+    <!-- Bottom Strap Stitches -->
+    <line x1="198" y1="370" x2="202" y2="480" stroke="#AA8232" stroke-dasharray="4,4" stroke-width="1.2" opacity="0.7"/>
+    <line x1="302" y1="370" x2="298" y2="480" stroke="#AA8232" stroke-dasharray="4,4" stroke-width="1.2" opacity="0.7"/>
+
+    <!-- Watch Lugs -->
+    <path d="M 185 140 L 195 190 L 180 200 Z" fill="url(#bezelGrad)"/>
+    <path d="M 315 140 L 305 190 L 320 200 Z" fill="url(#bezelGrad)"/>
+    <path d="M 185 360 L 195 310 L 180 300 Z" fill="url(#bezelGrad)"/>
+    <path d="M 315 360 L 305 310 L 320 300 Z" fill="url(#bezelGrad)"/>
+
+    <!-- Watch Crown -->
+    <path d="M 390 236 L 404 238 L 404 262 L 390 264 Z" fill="url(#bezelGrad)" stroke="#66501A" stroke-width="1"/>
+    <line x1="395" y1="240" x2="395" y2="260" stroke="#332508" stroke-width="1.5"/>
+    <line x1="400" y1="240" x2="400" y2="260" stroke="#332508" stroke-width="1.5"/>
+
+    <!-- Watch Outer Case -->
+    <circle cx="250" cy="250" r="145" fill="url(#bezelGrad)" stroke="#66501A" stroke-width="2"/>
+    <circle cx="250" cy="250" r="133" fill="#050709" stroke="#AA8232" stroke-width="1"/>
+
+    <!-- Dial Bezel Flange -->
+    <circle cx="250" cy="250" r="124" fill="url(#dialGlow)" stroke="url(#bezelGrad)" stroke-width="2.5"/>
+
+    <!-- Sunray / Guilloche patterns -->
+    <circle cx="250" cy="250" r="110" fill="none" stroke="#D4AF62" stroke-width="0.3" stroke-dasharray="1, 4" opacity="0.5"/>
+    <circle cx="250" cy="250" r="85" fill="none" stroke="#D4AF62" stroke-width="0.3" opacity="0.3"/>
+    <circle cx="250" cy="250" r="60" fill="none" stroke="#D4AF62" stroke-width="0.2" opacity="0.25"/>
+
+    <!-- Hour Markers (12 Indices) -->
+    <g stroke="#82A9DE" stroke-width="3" stroke-linecap="round">
+      <line x1="250" y1="140" x2="250" y2="155" stroke-width="5"/> <!-- 12 -->
+      <line x1="305" y1="155" x2="298" y2="167"/>                  <!-- 1 -->
+      <line x1="345" y1="195" x2="333" y2="202"/>                  <!-- 2 -->
+      <line x1="360" y1="250" x2="345" y2="250" stroke-width="4"/> <!-- 3 (or Date window) -->
+      <line x1="345" y1="305" x2="333" y2="298"/>                  <!-- 4 -->
+      <line x1="305" y1="345" x2="298" y2="333"/>                  <!-- 5 -->
+      <line x1="250" y1="360" x2="250" y2="345" stroke-width="4"/> <!-- 6 -->
+      <line x1="195" y1="345" x2="202" y2="333"/>                  <!-- 7 -->
+      <line x1="155" y1="305" x2="167" y2="298"/>                  <!-- 8 -->
+      <line x1="140" y1="250" x2="155" y2="250" stroke-width="4"/> <!-- 9 -->
+      <line x1="155" y1="195" x2="167" y2="202"/>                  <!-- 10 -->
+      <line x1="195" y1="155" x2="202" y2="167"/>                  <!-- 11 -->
+    </g>
+
+    <!-- Minute Dots around perimeter -->
+    <circle cx="250" cy="250" r="118" fill="none" stroke="#AA8232" stroke-width="1" stroke-dasharray="1.5, 9.8" opacity="0.6"/>
+
+    <!-- Date Window at 3 o'clock -->
+    <rect x="312" y="241" width="24" height="18" fill="#F7F5F0" stroke="#AA8232" stroke-width="1.2" rx="2"/>
+    <text x="324" y="254" font-family="'Roboto', sans-serif" font-size="11" font-weight="bold" fill="#080808" text-anchor="middle">28</text>
+
+    <!-- Holex Brand Text on Dial -->
+    <text x="250" y="200" font-family="'Playfair Display', serif" font-size="14" font-weight="700" letter-spacing="3" fill="url(#bezelGrad)" text-anchor="middle">HOLEX</text>
+    <text x="250" y="212" font-family="'Roboto', sans-serif" font-size="6.5" font-weight="500" letter-spacing="2.5" fill="#C5C5C5" text-anchor="middle">AUTOMATIC</text>
+
+    <!-- Sub-dial or Tourbillon if sports/classic -->
+    <circle cx="250" cy="295" r="22" fill="#08090C" stroke="#D4AF62" stroke-width="1" opacity="0.8"/>
+    <line x1="250" y1="295" x2="262" y2="288" stroke="#D4AF62" stroke-width="1.2"/>
+    <text x="250" y="326" font-family="'Roboto', sans-serif" font-size="5.5" letter-spacing="1.5" fill="#AA8232" text-anchor="middle">PRECISION • 50M</text>
+
+    <!-- Watch Hands (Classic Dauphine Style) pointing ~ 10:10 -->
+    <!-- Hour Hand -->
+    <polygon points="246,252 249,255 250,195 251,255 254,252 250,265" fill="url(#bezelGrad)" filter="url(#dropShadow)"/>
+    <!-- Minute Hand -->
+    <polygon points="246,252 249,255 295,180 251,255 254,252 250,268" fill="url(#bezelGrad)" filter="url(#dropShadow)"/>
+    <!-- Second Hand (Slender red or sapphire accent tip) -->
+    <line x1="250" y1="280" x2="250" y2="160" stroke="#D4AF62" stroke-width="1.2"/>
+    <circle cx="250" cy="280" r="3.5" fill="#D4AF62"/>
+    <circle cx="250" cy="250" r="4.5" fill="#222" stroke="url(#bezelGrad)" stroke-width="1.5"/>
+
+    <!-- Sapphire Crystal Glare Effect -->
+    <path d="M 145 200 Q 250 145 355 200 A 124 124 0 0 0 145 200 Z" fill="url(#crystalShine)" pointer-events="none"/>
+  </g>
+</svg>

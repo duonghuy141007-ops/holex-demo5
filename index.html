@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOLEX WATCH STORE | Timeless Precision, Modern Style - Cửa hàng Đồng hồ Cao cấp Đồng Nai</title>
+  
+  <!-- SEO & Meta Description -->
+  <meta name="description" content="HOLEX WATCH STORE - Thương hiệu đồng hồ cao cấp tại Nhơn Trạch, Đồng Nai. Bộ sưu tập Classic, Sport & Urban, Couple sang trọng, mặt kính Sapphire, máy chính xác vượt thời gian.">
+  <meta name="keywords" content="Holex, Holex Watch Store, đồng hồ cao cấp Đồng Nai, đồng hồ nam, đồng hồ nữ, đồng hồ đôi, Classic, Sport, 316L, Sapphire">
+  <meta name="author" content="Từ Dương Huy">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond, Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= 1. SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#trang-chu" class="brand-logo-link" title="HOLEX WATCH STORE">
+        <img src="assets/logo/holex-logo.svg" alt="HOLEX WATCH STORE Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="main-nav" id="navMenu" aria-label="Thanh điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#trang-chu" class="nav-link">Trang chủ</a></li>
+          <li><a href="#bo-suu-tap" class="nav-link">Bộ sưu tập</a></li>
+          <li><a href="#bo-suu-tap" class="nav-link" onclick="document.querySelector('[data-category=men]')?.click()">Đồng hồ Nam</a></li>
+          <li><a href="#bo-suu-tap" class="nav-link" onclick="document.querySelector('[data-category=women]')?.click()">Đồng hồ Nữ</a></li>
+          <li><a href="#bo-suu-tap" class="nav-link" onclick="document.querySelector('[data-category=couple]')?.click()">Đồng hồ Đôi</a></li>
+          <li><a href="#gioi-thieu" class="nav-link">Giới thiệu</a></li>
+          <li><a href="#dich-vu" class="nav-link">Dịch vụ</a></li>
+          <li><a href="#lien-he" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Search, Cart, CTA Order -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="icon-action-btn" id="headerSearchBtn" title="Tìm kiếm mẫu đồng hồ" aria-label="Tìm kiếm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Cart Trigger with Dynamic Badge -->
+        <button class="icon-action-btn open-cart-trigger" id="headerCartBtn" title="Xem giỏ hàng" aria-label="Giỏ hàng">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- CTA Order Now -->
+        <a href="#dat-hang" class="btn btn-gold btn-sm">Đặt hàng ngay</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Mở menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. HERO SECTION ================= -->
+  <section class="hero-section" id="trang-chu">
+    <div class="hero-bg-lines"></div>
+    <div class="container hero-layout">
+      <!-- Left Column: Copywriting & CTAs -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="gold-text">✦</span> HOLEX WATCH STORE • ĐỒNG NAI <span class="gold-text">✦</span>
+        </div>
+        <h1 class="hero-main-title">
+          VẺ ĐẸP <br>
+          <span class="gold-gradient-text">VƯỢT THỜI GIAN</span>
+        </h1>
+        <p class="hero-slogan">"Holex - Timeless Precision, Modern Style"</p>
+        <blockquote class="hero-quote">
+          "Mỗi chiếc đồng hồ không chỉ đo đếm thời gian, mà còn là tuyên ngôn về phong cách, cá tính và giá trị của người sở hữu."
+        </blockquote>
+
+        <div class="hero-cta-group">
+          <a href="#bo-suu-tap" class="btn btn-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Khám phá bộ sưu tập
+          </a>
+          <a href="#dat-hang" class="btn btn-outline-gold">
+            Đặt hàng ngay
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Kính Sapphire chống xước</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5 Năm</span>
+            <span class="stat-label">Bảo hành chính hãng Holex</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">316L</span>
+            <span class="stat-label">Thép chống gỉ nguyên khối</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Luxury Watch Showcase Visual -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-watch-glow"></div>
+        <img src="assets/images/hero-watch.svg" alt="HOLEX Imperial Flagship Watch" class="hero-watch-img">
+        
+        <div class="hero-floating-badge">
+          <div class="floating-icon">💎</div>
+          <div class="floating-info">
+            <strong>Kính Sapphire Nguyên Khối</strong>
+            <span>Kháng nước 50M • Máy Cơ Automatic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. ABOUT BRAND (THE ART OF TIME) ================= -->
+  <section class="about-section" id="gioi-thieu">
+    <div class="container about-layout">
+      <!-- Left Visual -->
+      <div class="about-image-card">
+        <img src="assets/images/about-watch.svg" alt="The Art of Time Holex Watchmaking" class="about-watch-img">
+        <div class="about-badge-overlay">
+          <span>THIẾT KẾ ĐỘC BẢN</span>
+          <strong>HOLEX BOUTIQUE</strong>
+        </div>
+      </div>
+
+      <!-- Right Story -->
+      <div class="about-content">
+        <div class="section-tag">VỀ THƯƠNG HIỆU HOLEX</div>
+        <h2 class="about-heading">THE ART OF TIME</h2>
+        <p class="about-paragraph">
+          <strong>HOLEX</strong> tin rằng đồng hồ không đơn thuần là một công cụ xem giờ mà còn là biểu tượng của phong cách sống, sự tinh tế và cá tính riêng biệt.
+        </p>
+        <p class="about-paragraph">
+          Với định hướng kết hợp giữa vẻ đẹp cổ điển và tinh thần hiện đại, <strong>Holex Watch Store</strong> mang đến những thiết kế sang trọng phù hợp với nhiều phong cách và khoảnh khắc đáng nhớ trong cuộc sống của quý khách hàng.
+        </p>
+
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <span class="pillar-icon">⚙️</span>
+            <h4 class="pillar-title">Bộ Máy Chính Xác</h4>
+            <p class="pillar-desc">Trang bị bộ máy cơ Automatic và Quartz Nhật Bản vận hành bền bỉ theo năm tháng.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">💎</span>
+            <h4 class="pillar-title">Chất Liệu Cao Cấp</h4>
+            <p class="pillar-desc">Thép 316L không gỉ, kính Sapphire phủ chống lóa và dây da bò Ý tuyển chọn kỹ lưỡng.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">🖋️</span>
+            <h4 class="pillar-title">Cá Nhân Hóa Độc Bản</h4>
+            <p class="pillar-desc">Dịch vụ khắc tên, chữ ký hoặc ngày kỷ niệm độc quyền lên nắp đáy theo yêu cầu.</p>
+          </div>
+          <div class="pillar-card">
+            <span class="pillar-icon">🛡️</span>
+            <h4 class="pillar-title">Bảo Hành 5 Năm</h4>
+            <p class="pillar-desc">Chính sách bảo dưỡng làm mới và thay pin miễn phí trọn đời cho mọi khách hàng VIP.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. PRODUCT CATALOG & FILTERS ================= -->
+  <section class="catalog-section" id="bo-suu-tap">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">KIỆT TÁC THỜI GIAN</div>
+        <h2 class="section-title">BỘ SƯU TẬP ĐỒNG HỒ HOLEX</h2>
+        <p class="section-subtitle">
+          Khám phá 3 dòng sản phẩm biểu trưng: Holex Classic lịch lãm, Holex Sport & Urban năng động và Holex Couple gắn kết yêu thương.
+        </p>
+      </div>
+
+      <!-- Filter & Search Toolbar -->
+      <div class="catalog-filter-bar">
+        <!-- Top Toolbar: Category Tabs & Live Search -->
+        <div class="filter-row-top">
+          <div class="category-tabs" role="tablist">
+            <button class="category-tab active" data-category="all" role="tab">Tất cả sản phẩm</button>
+            <button class="category-tab" data-category="classic" role="tab">HOLEX Classic</button>
+            <button class="category-tab" data-category="sport" role="tab">HOLEX Sport & Urban</button>
+            <button class="category-tab" data-category="couple" role="tab">HOLEX Couple</button>
+            <button class="category-tab" data-category="men" role="tab">Đồng hồ Nam</button>
+            <button class="category-tab" data-category="women" role="tab">Đồng hồ Nữ</button>
+          </div>
+
+          <div class="search-box-wrap">
+            <input type="text" id="searchInput" class="search-input" placeholder="Tìm tên, mã SP (ví dụ: Classic, Diver, Couple)..." aria-label="Tìm kiếm sản phẩm">
+            <span class="search-icon-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Bottom Toolbar: Price Filter, Sort Options & Reset Button -->
+        <div class="filter-row-bottom">
+          <div class="filter-selects-group">
+            <div class="filter-select-wrap">
+              <label for="priceFilter">Khoảng giá:</label>
+              <select id="priceFilter" class="filter-select">
+                <option value="all">Tất cả mức giá</option>
+                <option value="under-2m">Dưới 2.000.000 VNĐ</option>
+                <option value="2m-5m">2.000.000 – 5.000.000 VNĐ</option>
+                <option value="5m-10m">5.000.000 – 10.000.000 VNĐ</option>
+              </select>
+            </div>
+
+            <div class="filter-select-wrap">
+              <label for="sortSelect">Sắp xếp:</label>
+              <select id="sortSelect" class="filter-select">
+                <option value="default">Mặc định nổi bật</option>
+                <option value="price-asc">Giá: Thấp đến Cao</option>
+                <option value="price-desc">Giá: Cao đến Thấp</option>
+                <option value="name-asc">Tên sản phẩm: A - Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-reset-wrap">
+            <span class="results-count-text" id="productResultCount">Đang tải danh mục...</span>
+            <button class="btn-reset-filters" id="resetFilterBtn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                <path d="M3 3v5h5"></path>
+              </svg>
+              Xóa bộ lọc
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Rendered dynamically by js/main.js from PRODUCTS database -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. HOLEX BOUTIQUE SERVICES ================= -->
+  <section class="services-section" id="dich-vu">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">ĐẶC QUYỀN KHÁCH HÀNG</div>
+        <h2 class="section-title">DỊCH VỤ CỦA HOLEX</h2>
+        <p class="section-subtitle">
+          Chúng tôi mang đến trải nghiệm mua sắm và chăm sóc đồng hồ chuẩn phong cách boutique cao cấp hàng đầu.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Bảo Hành 5 Năm</h3>
+          <p class="service-desc">Cam kết bảo dưỡng máy móc, kiểm tra độ chống nước và thay pin miễn phí trọn đời sản phẩm.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Tư Vấn Chuyên Sâu</h3>
+          <p class="service-desc">Đội ngũ chuyên viên am hiểu thẩm mỹ đồng hồ tư vấn mẫu phù hợp với phong cách và cỡ cổ tay.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Khắc Tên Laser</h3>
+          <p class="service-desc">Công nghệ khắc laser sắc nét tên, chữ ký hoặc ngày kỷ niệm lên nắp đáy theo yêu cầu riêng.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polyline points="20 12 20 22 4 22 4 12"></polyline>
+              <rect x="2" y="7" width="20" height="5"></rect>
+              <line x1="12" y1="22" x2="12" y2="7"></line>
+              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Đóng Gói Quà VIP</h3>
+          <p class="service-desc">Hộp gỗ sơn mài sang trọng kèm túi giấy nhung cao cấp, thiệp chúc mừng viết tay tinh xảo.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Hỗ Trợ Sau Mua</h3>
+          <p class="service-desc">Chính sách 1 đổi 1 trong 30 ngày nếu phát sinh lỗi kỹ thuật. Vệ sinh đánh bóng miễn phí định kỳ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. TESTIMONIALS (PHẢN HỒI KHÁCH HÀNG) ================= -->
+  <section class="testimonials-section" id="danh-gia">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">TIẾNG NÓI KHÁCH HÀNG</div>
+        <h2 class="section-title">CẢM NHẬN VỀ HOLEX</h2>
+        <p class="section-subtitle">
+          Sự hài lòng và tin cậy của quý khách là niềm tự hào lớn nhất của thương hiệu Holex Watch Store.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Tôi tìm kiếm một mẫu đồng hồ mỏng nhẹ để phối cùng suit khi đi gặp gỡ đối tác. Mẫu Holex Heritage Ultra-Thin vượt ngoài kỳ vọng: vỏ mạ vàng óng ánh rất sang, mặt kính sapphire trong vắt và cảm giác đeo cực kỳ đầm tay."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">NL</div>
+            <div>
+              <div class="author-name">Nguyễn Hoàng Long</div>
+              <div class="author-title">Doanh nhân • Nhơn Trạch, Đồng Nai</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Dòng Diver Submariner Pro có độ hoàn thiện thép 316L rất chắc chắn và nam tính. Tôi đã đeo khi đi bơi và lặn nhẹ ở biển, máy chạy hoàn hảo không hề đọng sương. Nhân viên tại Đồng Nai tư vấn nhiệt tình và giao hàng nhanh."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MT</div>
+            <div>
+              <div class="author-name">Trần Minh Thư</div>
+              <div class="author-title">Kiến trúc sư • TP. Hồ Chí Minh</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Hai vợ chồng tôi chọn bộ Holex Eternal Love Duo cho dịp kỷ niệm 5 năm ngày cưới. Dịch vụ khắc laser ngày kỷ niệm phía sau nắp lưng rất sắc sảo và hộp quà gỗ cực kỳ quý phái. Một món quà vô cùng ý nghĩa!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ĐV</div>
+            <div>
+              <div class="author-name">Quốc Đạt & Phương Vy</div>
+              <div class="author-title">Cặp đôi • TP. Biên Hòa, Đồng Nai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="testimonials-disclaimer">
+        * Lưu ý: Các phản hồi trên là nội dung đánh giá minh họa trải nghiệm người dùng của Holex Watch Store, không tạo phản hồi giả mạo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 7. ORDER FORM SECTION (ĐẶT HÀNG NGAY) ================= -->
+  <section class="order-section" id="dat-hang">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">ĐẶT HÀNG TRỰC TUYẾN</div>
+        <h2 class="section-title">SỞ HỮU ĐỒNG HỒ HOLEX</h2>
+        <p class="section-subtitle">
+          Điền thông tin đặt mua ngay hôm nay để nhận hộp quà tặng cao cấp và dịch vụ khắc laser miễn phí từ Holex Watch Store Đồng Nai.
+        </p>
+      </div>
+
+      <div class="order-box-wrapper">
+        <form id="holexOrderForm" class="order-form" novalidate>
+          <div class="order-form-grid">
+            <!-- 1. Họ và tên -->
+            <div class="form-group">
+              <label for="orderFullName">Họ và tên khách hàng <span class="required-star">*</span></label>
+              <input type="text" id="orderFullName" class="form-control" placeholder="Ví dụ: Nguyễn Văn Hoàng" required>
+            </div>
+
+            <!-- 2. Số điện thoại -->
+            <div class="form-group">
+              <label for="orderPhone">Số điện thoại liên hệ <span class="required-star">*</span></label>
+              <input type="tel" id="orderPhone" class="form-control" placeholder="Ví dụ: 0903170298" required>
+            </div>
+
+            <!-- 3. Địa chỉ nhận hàng -->
+            <div class="form-group full-width">
+              <label for="orderAddress">Địa chỉ nhận hàng chi tiết <span class="required-star">*</span></label>
+              <input type="text" id="orderAddress" class="form-control" placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh thành..." required>
+            </div>
+
+            <!-- 4. Thời gian đặt hàng -->
+            <div class="form-group">
+              <label for="orderTime">Thời gian đặt hàng</label>
+              <input type="text" id="orderTime" class="form-control" readonly title="Tự động cập nhật thời gian">
+            </div>
+
+            <!-- 5. Sản phẩm đã chọn -->
+            <div class="form-group">
+              <label for="orderProductSelect">Sản phẩm đã chọn <span class="required-star">*</span></label>
+              <select id="orderProductSelect" class="form-control" required>
+                <!-- Populated dynamically by js/main.js -->
+              </select>
+            </div>
+
+            <!-- 6. Số lượng -->
+            <div class="form-group">
+              <label for="orderQuantity">Số lượng sản phẩm <span class="required-star">*</span></label>
+              <input type="number" id="orderQuantity" class="form-control" min="1" max="20" value="1" required>
+            </div>
+
+            <!-- 7. Ghi chú đơn hàng -->
+            <div class="form-group full-width">
+              <label for="orderNote">Ghi chú đặc biệt (Tùy chọn)</label>
+              <textarea id="orderNote" class="form-control" rows="3" placeholder="Yêu cầu khắc tên laser, đóng gói hộp quà, thời gian giao hàng thuận tiện nhất..."></textarea>
+            </div>
+
+            <!-- Order Total Display Banner -->
+            <div class="order-summary-banner">
+              <span class="summary-banner-label">Tổng thanh toán dự kiến (Miễn phí vận chuyển toàn quốc):</span>
+              <span class="summary-banner-value" id="orderFormTotalPrice">0 VNĐ</span>
+            </div>
+
+            <!-- 8. Nút xác nhận đặt hàng -->
+            <div class="order-submit-group">
+              <button type="submit" class="btn btn-gold btn-block" id="orderSubmitBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                Xác nhận đặt hàng ngay
+              </button>
+              <span class="order-demo-note">
+                * Lưu ý: Đây là phiên bản demo frontend. Đơn hàng sẽ được hiển thị trên Console và thông báo trực quan, không gửi dữ liệu giả mạo lên máy chủ.
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. FOOTER & THÔNG TIN CỬA HÀNG ================= -->
+  <footer class="site-footer" id="lien-he">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <img src="assets/logo/holex-logo.svg" alt="HOLEX WATCH STORE" class="footer-brand-logo">
+          <p class="footer-brand-desc">
+            HOLEX WATCH STORE – Thương hiệu đồng hồ cao cấp kết hợp tinh hoa thẩm mỹ cổ điển và độ chính xác hiện đại. Điểm đến tin cậy của những người yêu chuộng sự tinh tế.
+          </p>
+          <div class="footer-social-links">
+            <!-- Facebook link placeholder -->
+            <a href="https://facebook.com/holexwatchstore" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook Holex Watch Store">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <!-- Instagram link placeholder -->
+            <a href="https://instagram.com/holexwatchstore" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram Holex Watch Store">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Khám Phá</h4>
+          <ul class="footer-links-list">
+            <li><a href="#trang-chu">Trang chủ</a></li>
+            <li><a href="#bo-suu-tap">Bộ sưu tập mới</a></li>
+            <li><a href="#bo-suu-tap">Dòng Holex Classic</a></li>
+            <li><a href="#bo-suu-tap">Dòng Sport & Urban</a></li>
+            <li><a href="#bo-suu-tap">Đồng hồ đôi Holex Couple</a></li>
+            <li><a href="#gioi-thieu">Câu chuyện thương hiệu</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Policies -->
+        <div class="footer-col">
+          <h4 class="footer-title">Chính Sách Holex</h4>
+          <ul class="footer-links-list">
+            <li><a href="#dich-vu">Chính sách bảo hành 5 năm</a></li>
+            <li><a href="#dich-vu">Chính sách đổi trả 30 ngày</a></li>
+            <li><a href="#dich-vu">Chính sách vận chuyển hỏa tốc</a></li>
+            <li><a href="#dich-vu">Dịch vụ khắc tên laser</a></li>
+            <li><a href="#dich-vu">Hướng dẫn đo cỡ cổ tay</a></li>
+            <li><a href="#dich-vu">Bảo mật thông tin khách hàng</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-title">Cửa Hàng Đồng Nai</h4>
+          <div class="footer-contact-list">
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <strong>Địa chỉ cửa hàng:</strong><br>
+                Tổ 10, Ấp 2, Xã Long An, Huyện Nhơn Trạch, Tỉnh Đồng Nai.
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <div>
+                <strong>Hotline:</strong><br>
+                <a href="tel:09031702981" class="gold-text" style="font-weight: 700; font-size: 1.05rem;">09031702981</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <div>
+                <strong>Giờ mở cửa:</strong><br>
+                06:00 – 22:00 hằng ngày (kể cả Lễ, Tết)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Middle Bar -->
+      <div class="footer-middle-bar">
+        <span>© 2026 HOLEX WATCH STORE. Bản quyền thuộc về thương hiệu Holex Đồng Nai.</span>
+        <span>Cam kết chất lượng chuẩn Thụy Sĩ & Nhật Bản • Hotline: 09031702981</span>
+      </div>
+    </div>
+
+    <!-- Dải Credit Độc Quyền theo Yêu cầu Mục 10:
+         "Dòng credit cuối footer: 'Thiết kế bởi Từ Dương Huy'.
+         Font chữ nhỏ. Màu đen tuyền hoặc màu chữ tối trên dải nền trắng ngà riêng biệt
+         để vẫn đảm bảo độ tương phản và dễ đọc. Căn giữa hoặc căn phải. Không làm mất tính thẩm mỹ tổng thể." -->
+    <div class="footer-credit-strip">
+      <div class="credit-strip-container">
+        <span class="credit-brand-tag">HOLEX WATCH STORE • OFFICIAL BOUTIQUE LANDING PAGE</span>
+        <span class="credit-author-text">
+          Thiết kế bởi <strong>Từ Dương Huy</strong>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 9. CART DRAWER (GIỎ HÀNG) ================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng của bạn">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D4AF62" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Giỏ hàng của bạn
+      </h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Đóng giỏ hàng">✕</button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <!-- Empty Cart State -->
+      <div class="cart-empty-state" id="cartEmptyState">
+        <div class="cart-empty-icon">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#727885" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <p>Giỏ hàng của quý khách đang trống</p>
+        <button class="btn btn-outline-gold btn-sm" onclick="window.holexCart.close(); document.getElementById('bo-suu-tap').scrollIntoView({behavior:'smooth'})">
+          Khám phá đồng hồ ngay
+        </button>
+      </div>
+
+      <!-- Active Cart Items List -->
+      <div class="cart-item-list" id="cartItemList">
+        <!-- Rendered by js/cart.js -->
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartFooter" style="display: none;">
+      <div class="cart-summary-line">
+        <span>Tạm tính:</span>
+        <span id="cartSubtotalPrice">0 VNĐ</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Phí vận chuyển:</span>
+        <span class="gold-text">Miễn phí toàn quốc</span>
+      </div>
+      <div class="cart-summary-line cart-total-line">
+        <span>Tổng thanh toán:</span>
+        <span id="cartTotalPrice">0 VNĐ</span>
+      </div>
+      <button class="btn btn-gold btn-block" id="cartCheckoutBtn">
+        Tiến hành đặt hàng
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= 10. PRODUCT DETAIL MODAL (QUICK VIEW) ================= -->
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+    <div class="modal-backdrop-overlay" id="modalOverlay"></div>
+    <div class="modal-dialog-box">
+      <button class="modal-close-trigger" id="productModalClose" aria-label="Đóng cửa sổ">✕</button>
+      <div class="modal-content" id="productModalContent">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 11. BACK TO TOP BUTTON ================= -->
+  <button class="back-to-top-btn" id="backToTopBtn" title="Quay về đầu trang" aria-label="Lên đầu trang">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

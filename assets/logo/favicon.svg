@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E7C4" />
+      <stop offset="50%" stop-color="#D4AF62" />
+      <stop offset="100%" stop-color="#AA8232" />
+    </linearGradient>
+    <linearGradient id="favSapphire" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4B85" />
+      <stop offset="50%" stop-color="#173B69" />
+      <stop offset="100%" stop-color="#080808" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#080808" stroke="url(#favGold)" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="24" fill="url(#favSapphire)" stroke="url(#favGold)" stroke-width="1.2" stroke-dasharray="2, 2"/>
+  <polygon points="32,14 46,28 32,50 18,28" fill="none" stroke="url(#favGold)" stroke-width="0.8" opacity="0.6"/>
+  <!-- H monogram -->
+  <path d="M 24 20 L 27 20 L 27 44 L 24 44 Z" fill="url(#favGold)" />
+  <path d="M 37 20 L 40 20 L 40 44 L 37 44 Z" fill="url(#favGold)" />
+  <path d="M 26 30.5 L 38 30.5 L 38 33.5 L 26 33.5 Z" fill="url(#favGold)" />
+  <polygon points="32,28 35,32 32,36 29,32" fill="#F7F5F0" stroke="url(#favGold)" stroke-width="0.6" />
+</svg>
